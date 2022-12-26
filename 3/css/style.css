@@ -1,0 +1,394 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 320px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.welcome-painting__text {
+  width: 320px;
+  min-height: 205px;
+}
+.welcome-painting__description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.welcome-painting__justification {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.characteristics__advantages-item {
+  list-style-type: none;
+}
+.characteristics__advantages-text--realtown {
+  background-color: #81B3D2;
+}
+.characteristics__advantages-item--devilbridge {
+  width: 320px;
+  min-height: 191px;
+  background-color: #81B3D2;
+}
+.characteristics__advantage-text {
+  width: 320px;
+  min-height: 211px;
+}
+.characteristics__title-bluestyle {
+  font-family: "PT Sans";
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 284px;
+  min-height: 26px;
+}
+.characteristics__text-bluestyle {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.characteristics__graphical-element {
+  width: 284px;
+  min-height: 113px;
+  background-color: #FFFFFF;
+}
+.characteristics__title-blackstyle {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.characteristics__text-blackstyle {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.characteristics__advantages-item-grey {
+  width: 284px;
+  min-height: 118px;
+  padding: 24px 26px 24px 26px;
+  background-color: #EEEEEE;
+}
+.characteristics__title-whitestyle {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 284px;
+  min-height: 26px;
+  color: #000000;
+}
+.characteristics__text-whitestyle {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+.hotel-block__description-wrapper {
+  width: 320px;
+  min-height: 287px;
+}
+.hotel-block__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.hotel-block__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.hotel-block__button {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  padding: 16px 49px;
+}
+.main-footer__wrapper {
+  width: 320px;
+  min-height: 233px;
+}
+.main-footer__sedona-link {
+  text-decoration: none;
+}
+.main-footer__sedona-link-hashtag {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+.social {
+  width: 156px;
+  min-height: 48px;
+  margin: 88px 82px 97px 82px;
+}
+.social__item {
+  width: 48px;
+  height: 48px;
+  list-style-type: none;
+  background-color: #81B3D2;
+}
+.social__item + .social__item {
+  margin-right: 6px;
+}
+.social__link--vk {
+  background-image: url("../img/index/vk.svg");
+}
+.social__link--tg {
+  background-image: url("../img/index/tg.svg");
+}
+.social__link--yt {
+  background-image: url("../img/index/yt.svg");
+}
+.main-footer__logo-link {
+  text-decoration: none;
+}
+.main-footer__logo-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.site-list {
+  width: 320px;
+  min-height: 223px;
+}
+.site-list__item {
+  list-style-type: none;
+  width: 320px;
+  height: 55px;
+  background-color: #81B3D2;
+}
+.site-list__link {
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.photos-videos__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.photos-videos__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.galery__item {
+  list-style-type: none;
+  width: 320px;
+  min-height: 424px;
+}
+.galery__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.galery__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 21px;
+  color: #000000;
+}
+.galery__likes-count {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.galery__like-button {
+  background-image: url("../img/catalog/like-icon.svg");
+}
+.galery__video-title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.galery__video-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.form__greetings-title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__greetings-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.form__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__label {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.form__input {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 280px;
+  height: 58px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__radio-checkbox-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.emotions-commen {
+  width: 279px;
+  height: 150px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form__submit-button {
+  width: 280px;
+  height: 58px;
+  background-color: #81B3D2;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.form__required-text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+/*# sourceMappingURL=style.css.map */
