@@ -1,31 +1,3 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
 html {
   height: 100%;
 }
@@ -49,12 +21,25 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff");
+  font-display: swap;
+}
 .welcome-painting__text {
   width: 320px;
   min-height: 205px;
 }
 .welcome-painting__description {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -62,7 +47,6 @@ body {
   color: #000000;
 }
 .welcome-painting__justification {
-  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -85,7 +69,6 @@ body {
   min-height: 211px;
 }
 .characteristics__title-bluestyle {
-  font-family: "PT Sans";
   color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
@@ -95,7 +78,6 @@ body {
   min-height: 26px;
 }
 .characteristics__text-bluestyle {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -109,7 +91,6 @@ body {
   background-color: #FFFFFF;
 }
 .characteristics__title-blackstyle {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -117,12 +98,11 @@ body {
   color: #000000;
 }
 .characteristics__text-blackstyle {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
 }
 .characteristics__advantages-item-grey {
   width: 284px;
@@ -131,7 +111,6 @@ body {
   background-color: #EEEEEE;
 }
 .characteristics__title-whitestyle {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -141,20 +120,18 @@ body {
   color: #000000;
 }
 .characteristics__text-whitestyle {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  color: #000000;
+  color: #333333;
 }
 .hotel-block__description-wrapper {
   width: 320px;
   min-height: 287px;
 }
 .hotel-block__title {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -162,15 +139,13 @@ body {
   color: #000000;
 }
 .hotel-block__text {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
 }
 .hotel-block__button {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -187,12 +162,172 @@ body {
   text-decoration: none;
 }
 .main-footer__sedona-link-hashtag {
-  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+.main-footer__logo-link {
+  text-decoration: none;
+}
+.main-footer__logo-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.site-list {
+  width: 320px;
+  min-height: 223px;
+}
+.site-list__item {
+  list-style-type: none;
+  width: 320px;
+  height: 55px;
+  background-color: #81B3D2;
+}
+.site-list__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.photos-videos__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.photos-videos__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.form__greetings-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__greetings-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.form__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.form__input {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 280px;
+  height: 58px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__radio-checkbox-text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.form__emotions-comment {
+  width: 279px;
+  height: 150px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form__submit-button {
+  width: 280px;
+  height: 58px;
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.form__required-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+.galery__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.galery__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 21px;
+  color: #333333;
+}
+.galery__likes-count {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.galery__like-button {
+  background-image: url("../img/catalog/like-icon.svg");
+}
+.galery__video-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.galery__video-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.galery__item {
+  list-style-type: none;
+  width: 320px;
+  min-height: 424px;
 }
 .social {
   width: 156px;
@@ -216,179 +351,5 @@ body {
 }
 .social__link--yt {
   background-image: url("../img/index/yt.svg");
-}
-.main-footer__logo-link {
-  text-decoration: none;
-}
-.main-footer__logo-text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-}
-.site-list {
-  width: 320px;
-  min-height: 223px;
-}
-.site-list__item {
-  list-style-type: none;
-  width: 320px;
-  height: 55px;
-  background-color: #81B3D2;
-}
-.site-list__link {
-  text-decoration: none;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #FFFFFF;
-}
-.photos-videos__title {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-.photos-videos__text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-.galery__item {
-  list-style-type: none;
-  width: 320px;
-  min-height: 424px;
-}
-.galery__title {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-}
-.galery__text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 21px;
-  color: #000000;
-}
-.galery__likes-count {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-}
-.galery__like-button {
-  background-image: url("../img/catalog/like-icon.svg");
-}
-.galery__video-title {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-.galery__video-text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-.form__greetings-title {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-.form__greetings-text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-.form__title {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-.form__label {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-.form__input {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 280px;
-  height: 58px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-.form__radio-checkbox-text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-.emotions-commen {
-  width: 279px;
-  height: 150px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-.form__submit-button {
-  width: 280px;
-  height: 58px;
-  background-color: #81B3D2;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-.form__required-text {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: rgba(51, 51, 51, 0.6);
 }
 /*# sourceMappingURL=style.css.map */
