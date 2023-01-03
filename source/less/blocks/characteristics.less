@@ -1,20 +1,65 @@
+.characteristics__advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .characteristics__advantages-item {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 210px;
 }
 
-.characteristics__advantages-text--realtown {
-  background-color: #81B3D2;
-}
-
-.characteristics__advantages-item--devilbridge {
+.characteristics__advantages-item-bluestyle {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  min-height: 191px;
-  background-color: #81B3D2;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .characteristics__advantage-text {
-  width: 320px;
-  min-height: 211px;
+  display: flex;
+  flex-direction: column;
+  background-color: #81B3D2;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .characteristics__img--devilbridge {
+    order: -1;
+  }
 }
 
 .characteristics__title-bluestyle {
@@ -23,8 +68,18 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  width: 284px;
+  text-align: center;
+  width: 320px;
   min-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
 }
 
 .characteristics__text-bluestyle {
@@ -34,12 +89,74 @@
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 15px;
+}
+
+.characteristics__img {
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.characteristics__graphical-advantages {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  min-height: 347px;
+  padding: 23px 18px 46px 18px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    min-height: 330px;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.characteristics__blackstyle-wrapper {
+  width: 237px;
+  min-height: 92px;
+  padding: 0 0 0 47px;
+  position: relative;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    min-height: 113px;
+    padding: 158px 33px 60px 33px;
+    margin: 0;
+    text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    min-height: 92px;
+    padding: 169px 50px 69px 50px;
+  }
 }
 
 .characteristics__graphical-element {
-  width: 284px;
-  min-height: 113px;
-  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+  }
 }
 
 .characteristics__title-blackstyle {
@@ -48,6 +165,12 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  padding: 8px 0 16px 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .characteristics__text-blackstyle {
@@ -56,13 +179,26 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  padding: 0;
+  margin: 0;
 }
 
 .characteristics__advantages-item-grey {
-  width: 284px;
-  min-height: 118px;
-  padding: 24px 26px 24px 26px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   background-color: #EEEEEE;
+  width: 284px;
+  min-height: 165px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+    width: 33%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+  }
 }
 
 .characteristics__title-whitestyle {
@@ -70,9 +206,19 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: #000000;
+  text-align: center;
   width: 284px;
   min-height: 26px;
-  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .characteristics__text-whitestyle {
@@ -82,4 +228,5 @@
   line-height: 21px;
   text-align: center;
   color: #333333;
+  text-align: center;
 }

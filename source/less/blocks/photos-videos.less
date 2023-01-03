@@ -1,12 +1,30 @@
+.photos-videos {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .photos-videos__title {
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .photos-videos__text {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
