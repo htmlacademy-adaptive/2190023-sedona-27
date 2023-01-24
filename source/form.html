@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Форма Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body class="page__body">
@@ -32,20 +33,22 @@
           </li>
         </ul>
         <a class="main-nav__logo" href="./index.html">
-          <img class="main-nav__sedona-logo" src="./img/logo.png" width="185" height="96" alt="Логотип Седона">
+          <img class="main-nav__sedona-logo" src="./img/logo.png" width="185" height="96" srcset="./img/logo@2x.png 2x" alt="Логотип Седона">
         </a>
       </nav>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Форма заполнения отзыва</h1>
-      <section class="welcome-painting welcome-painting__form">
+      <section class="welcome-painting welcome-painting--form">
         <h2 class="visually-hidden">Визитная карточка Седоны</h2>
         <div class="welcome-painting__sedona-mountains welcome-painting__sedona-mountains--catalog">
-          <img class="welcome-painting__sedona-text" src="./img/text-sedona.svg" width="230" height="40"
-            alt="Добро пожаловать в Седону.">
-          <!-- <img class="welcome-painting__hero-block-triangle" src="./img/intro-triangle.svg" width="320" height="57" -->
-          alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/form/hero-block-text-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/form/hero-block-text-tablet.svg">
+            <img class="welcome-painting__sedona-text" src="./img/text-sedona.svg" width="230" height="40"
+              alt="Добро пожаловать в Седону.">
+          </picture>
         </div>
       </section>
       <section class="form">
@@ -78,67 +81,84 @@
               <h2 class="form__title form__title--contacts">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
               <div class="form__frame form__frame--contacts">
                 <label class="form__label" for="phone-input">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-                <svg class="form__phone-icon" xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="none" viewBox="0 0 58 58"><path fill="#E6E6E6" d="M0 0h58v58H0z"/><path fill="#010101" d="M23.6 27.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V37c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
-                <input class="form__input form__input--contacts" id="phone-input" name="phone-input" type="tel" placeholder="Введите телефон"
-                  required>
+                <svg class="form__phone-icon" xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="none"
+                  viewBox="0 0 58 58">
+                  <path fill="#E6E6E6" d="M0 0h58v58H0z" />
+                  <path fill="#010101"
+                    d="M23.6 27.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V37c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z" />
+                </svg>
+                <input class="form__input form__input--contacts" id="phone-input" name="phone-input" type="tel"
+                  placeholder="Введите телефон" required>
               </div>
               <div class="form__frame form__frame--contacts">
                 <label class="form__label" for="email-input">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-                <svg class="form__mail-icon" xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="none" viewBox="0 0 58 58"><path fill="#E6E6E6" d="M0 0h58v58H0z"/><path fill="#000" d="M29 31c-.3 0-.5-.1-1-.3L21 27v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1v-7l-7 3.7c-.5.2-.7.3-1 .3Zm7-8H22c-.5 0-1 .5-1 1v.8l8 4.2 8-4.2V24c0-.5-.5-1-1-1Z"/></svg>
-                <input class="form__input form__input--contacts" id="email-input" name="email-input" type="email" placeholder="Введите e-mail"
-                  required>
+                <svg class="form__mail-icon" xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="none"
+                  viewBox="0 0 58 58">
+                  <path fill="#E6E6E6" d="M0 0h58v58H0z" />
+                  <path fill="#000"
+                    d="M29 31c-.3 0-.5-.1-1-.3L21 27v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1v-7l-7 3.7c-.5.2-.7.3-1 .3Zm7-8H22c-.5 0-1 .5-1 1v.8l8 4.2 8-4.2V24c0-.5-.5-1-1-1Z" />
+                </svg>
+                <input class="form__input form__input--contacts" id="email-input" name="email-input" type="email"
+                  placeholder="Введите e-mail" required>
               </div>
             </li>
             <li class="form__item form__item--radio-checkbox form__item--radio">
               <h2 class="form__title form__title--impression">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
               <div class="form__radio-section">
-                <div class="form__radio-checkbox-wrapper">
+
+                <label class="form__radio-checkbox-wrapper">
                   <input class="visually-hidden form__impressions-radio" id="impressions-choice1"
                     name="impressions-choice" type="radio" value="very-positive" checked>
-                  <div class="form__control-mark form__control-mark--radio"></div>
-                  <label class="form__radio-checkbox-text" for="impressions-choice1">Скорее положительное</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__radio-checkbox-text">Скорее положительное</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper">
                   <input class="visually-hidden form__impressions-radio" id="impressions-choice2"
                     name="impressions-choice" type="radio" value="very-negative">
-                  <div class="form__control-mark form__control-mark--radio"></div>
-                  <label class="form__radio-checkbox-text" for="impressions-choice2">Скорее отрицательное</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper">
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__radio-checkbox-text">Скорее отрицательное</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper">
                   <input class="visually-hidden form__impressions-radio" id="impressions-choice3"
                     name="impressions-choice" type="radio" value="idk">
-                  <div class="form__control-mark form__control-mark--radio"></div>
-                  <label class="form__radio-checkbox-text" for="impressions-choice3">Затрудняюсь ответить</label>
-                </div>
+                  <span class="form__control-mark form__control-mark--radio"></span>
+                  <span class="form__radio-checkbox-text">Затрудняюсь ответить</span>
+                </label>
               </div>
             </li>
             <li class="form__item form__item--radio-checkbox form__item--checkbox">
               <h2 class="form__title form__title--places">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
               <div class="form__checkbox-section">
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
                   <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="devils-bridge"
                     name="devils-bridge" checked>
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="devils-bridge">Мост Дьявола</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Мост Дьявола</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
                   <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="bell-mountain"
                     name="bell-mountain" checked>
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="bell-mountain">Гора-Колокол</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
-                  <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="side-park"
-                    name="side-park" checked>
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="side-park">Слайд-парк</label>
-                </div>
-                <div class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Гора-Колокол</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
+                  <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="slide-park"
+                    name="slide-park" checked>
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Слайд-парк</span>
+                </label>
+
+                <label class="form__radio-checkbox-wrapper form__radio-checkbox-wrapper--cb">
                   <input class="visually-hidden form__showplaces-checkbox" type="checkbox" id="red-mountains"
                     name="red-mountains">
-                  <div class="form__control-mark"></div>
-                  <label class="form__radio-checkbox-text" for="red-mountains">Красные скалы</label>
-                </div>
+                  <span class="form__control-mark"></span>
+                  <span class="form__radio-checkbox-text">Красные скалы</span>
+                </label>
               </div>
             </li>
             <li class="form__item form__item--emotions">
@@ -208,6 +228,25 @@
         </div>
       </div>
     </footer>
+    <div class="something-wrong__modal-container visually-hidden">
+      <div class="something-wrong__main">
+        <h2 class="something-wrong__header">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <span class="something-wrong__text">ПРОВЕРЬТЕ ПОЛЯ, ВЫДЕЛЕННЫЕ КРАСНЫМ, СКОРЕЕ ВСЕГО ВЫ ЗАБЫЛИ ИЗ
+          ЗАПОЛНИТЬ</span>
+        <button class="something-wrong__close-button">ОК</button>
+      </div>
+    </div>
+
+    <div class="sended__modal-container visually-hidden">
+      <div class="sended__main">
+        <h2 class="sended__header">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h2>
+        <span class="sended__text">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ
+          ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</span>
+        <div class="sended__button-wrapper">
+          <button class="sended__close-button">ЗАКРЫТЬ ОКНО</button>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="./js/script.js"></script>
 </body>
